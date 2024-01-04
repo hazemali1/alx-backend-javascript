@@ -1,5 +1,5 @@
 class HolbertonClass {
-  constructor(year, location) {
+  constructor(year = 0, location = '') {
     this._year = year;
     this._location = location;
   }
@@ -8,7 +8,9 @@ class HolbertonClass {
     return this._year;
   }
 
-  
+  get location() {
+    return this._location;
+  }
 }
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');
