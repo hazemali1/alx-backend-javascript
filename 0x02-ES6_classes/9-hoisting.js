@@ -8,9 +8,7 @@ class HolbertonClass {
     return this._year;
   }
 
-  get location() {
-    return this._location;
-  }
+  
 }
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');
@@ -32,7 +30,7 @@ class StudentHolberton {
   }
 
   get fullStudentDescription() {
-    return `${this._firstName} ${this._lastName} - ${this._holbertonClass._year} - ${this._holbertonClass._location}h`;
+    return `${this._firstName} ${this._lastName} - ${this._holbertonClass._year} - ${this._holbertonClass._location}`;
   }
 }
 
