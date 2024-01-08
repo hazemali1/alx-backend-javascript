@@ -1,8 +1,8 @@
-export default function cleanSet(set, str) {
+export default function cleanSet(set, startString) {
   const arr = [];
   for (const i of set.values()) {
-    if (i.substr(0, str.length) && i.substr(0, str.length) === str) {
-      arr.push(i.substr(str.length));
+    if (i.substr(0, startString.length) && i.substr(0, startString.length) === startString) {
+      arr.push(i.substr(startString.length));
     }
   }
   return arr.join('-');
