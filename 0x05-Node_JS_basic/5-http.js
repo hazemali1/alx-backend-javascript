@@ -13,7 +13,7 @@ const app = http.createServer(async (req, res) => {
     countStudents(process.argv[2])
       .then((msg) => {
         dbInfo += msg;
-	console.log(msg);
+        console.log(msg);
         res.end(dbInfo);
       })
       .catch((err) => {
